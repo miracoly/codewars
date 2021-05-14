@@ -1,7 +1,6 @@
 package de.klosebrothers.apprentice;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 import java.util.function.Supplier;
 
@@ -36,7 +35,7 @@ public final class SpiderWeb {
         final int step = Integer.signum(ringLast - ringStart);
 
         final List<Position> posList = new ArrayList<>();
-        for (int curRing = ringStart + step; curRing != ringLast ; curRing += step) {
+        for (int curRing = ringStart + step; curRing != ringLast; curRing += step) {
             posList.add(Position.fromRadialAndRing(radial, curRing));
         }
         return posList;

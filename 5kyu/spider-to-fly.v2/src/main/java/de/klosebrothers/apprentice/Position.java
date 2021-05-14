@@ -5,11 +5,16 @@ import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 
 @EqualsAndHashCode
-@AllArgsConstructor(access = AccessLevel.PRIVATE)
+//@AllArgsConstructor(access = AccessLevel.PRIVATE)
 public final class Position {
 
     public final int radial;
     public final int ring;
+
+    private Position(int radial, int ring) {
+        this.radial = radial;
+        this.ring = ring;
+    }
 
     public static Position fromRadialAndRing(int radial, int ring) {
         return new Position(ring == 0 ? 0 : radial, ring);

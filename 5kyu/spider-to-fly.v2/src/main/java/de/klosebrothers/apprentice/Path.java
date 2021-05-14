@@ -6,7 +6,7 @@ import lombok.EqualsAndHashCode;
 
 import java.util.List;
 
-@AllArgsConstructor(access = AccessLevel.PRIVATE)
+//@AllArgsConstructor(access = AccessLevel.PRIVATE)
 @EqualsAndHashCode
 public final class Path {
 
@@ -14,6 +14,10 @@ public final class Path {
 
     public static Path from(List<Position> startAndSteps) {
         return new Path(startAndSteps);
+    }
+
+    private Path(List<Position> startAndSteps) {
+        this.startAndSteps = startAndSteps;
     }
 
     @Override
