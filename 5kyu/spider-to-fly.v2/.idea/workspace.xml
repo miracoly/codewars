@@ -6,9 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="a0e31d9c-652b-49e0-a21c-3c1fecbcd745" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/klosebrothers/apprentice/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/klosebrothers/apprentice/Path.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/klosebrothers/apprentice/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/klosebrothers/apprentice/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/klosebrothers/apprentice/SpiderWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/klosebrothers/apprentice/SpiderWeb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7kyu/fizz-buzz/fizz-buzz-v2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7kyu/fizz-buzz/fizz-buzz-v2/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7kyu/fizz-buzz/fizz-buzz-v2/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7kyu/fizz-buzz/fizz-buzz-v2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7kyu/fizz-buzz/fizz-buzz-v2/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7kyu/fizz-buzz/fizz-buzz-v2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7kyu/fizz-buzz/fizz-buzz-v2/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7kyu/fizz-buzz/fizz-buzz-v2/src/main/java/de/klosebrothers/apprentice/fizzbuzz/FizzBuzz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7kyu/fizz-buzz/fizz-buzz-v2/src/test/java/de/klosebrothers/apprentice/fizzbuzz/FizzBuzzTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7kyu/fizz-buzz/fizz-buzz-v2/target/classes/de/klosebrothers/apprentice/fizzbuzz/FizzBuzz.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7kyu/fizz-buzz/fizz-buzz-v2/target/test-classes/de/klosebrothers/apprentice/fizzbuzz/FizzBuzzTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,17 +83,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.SpiderWebTest.getShortestPathToSameRadial">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PathTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="my-app" />
       <extension name="coverage">
@@ -188,6 +185,8 @@
       <workItem from="1620802597440" duration="10575000" />
       <workItem from="1620820616186" duration="125000" />
       <workItem from="1620829963908" duration="6232000" />
+      <workItem from="1621008727716" duration="473000" />
+      <workItem from="1621010595089" duration="28000" />
     </task>
     <servers />
   </component>
