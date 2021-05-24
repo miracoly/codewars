@@ -19,6 +19,17 @@ public class Tennis {
             }
             return map.get(scoreA) + " all";
         }
+        if (scoreA >= 4) {
+            if (scoreA + 2 >= scoreB) {
+                return "Player One wins";
+            }
+            if (scoreA + 1 == scoreB) {
+                return "Advantage Player One";
+            }
+        }
+        if (scoreB >= 4) {
+            return "Player Two wins";
+        }
         return map.get(scoreA) + ", " + map.get(scoreB);
     }
 

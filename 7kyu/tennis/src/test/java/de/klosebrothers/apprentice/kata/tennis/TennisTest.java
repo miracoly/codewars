@@ -41,4 +41,25 @@ class TennisTest {
     void scoreIs1To2() {
         assertThat(parseScore(1, 2)).isEqualTo("Fifteen, Thirty");
     }
+
+    @Test
+    void scoreIs3To2() {
+        assertThat(parseScore(3, 2)).isEqualTo("Forty, Thirty");
+    }
+
+    @Test
+    void scoreIs4To0() {
+        assertThat(parseScore(4, 0)).isEqualTo("Player One wins");
+    }
+
+    @Test
+    void scoreIs0To4() {
+        assertThat(parseScore(0, 4)).isEqualTo("Player Two wins");
+    }
+
+    @Test
+    void scoreIs4To5() {
+        assertThat(parseScore(4, 5)).isEqualTo("Advantage Player One");
+    }
+
 }
