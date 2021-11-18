@@ -9,6 +9,10 @@ import Control.Exception (evaluate)
 import System.Exit (exitFailure)
 
 main = hspec $ do
-  describe "Test Sum of Positive" $ do
-    it "sums all numbers where numbers are all positive" $ do
-      reverse [1,2,3,4] `shouldBe` ([4,3,2,1] :: [Int])
+  describe "Test makeNegative" $ do
+    it "makes positive Numbers negative" $ do
+      makeNegative (1) `shouldBe` (-1)
+      makeNegative (37) `shouldBe` (-37)
+    it "do not change negativ number" $ do
+      makeNegative (-9) `shouldBe` (-9)
+      makeNegative (-921) `shouldBe` (-921)
