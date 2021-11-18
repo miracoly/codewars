@@ -7,7 +7,7 @@ Test-Suite sumpos
     type:               exitcode-stdio-1.0
     hs-source-dirs:     app
     main-is:            ../test/spec.hs
-    other-modules:      Codewars
+    other-modules:      Codewars.Functions
     build-depends:      base >= 4 && < 5,
                         hspec,
                         QuickCheck
@@ -16,7 +16,7 @@ Test-Suite kyu8
     type:               exitcode-stdio-1.0
     hs-source-dirs:     app
     main-is:            ../test/kyu8-spec.hs
-    other-modules:      Kyu8
+    other-modules:      Codewars.Kyu8
     build-depends:      base >= 4 && < 5,
                         hspec,
                         QuickCheck
@@ -46,8 +46,8 @@ extra-source-files: CHANGELOG.md
 
 executable codewars
     main-is:          Main.hs
-    other-modules:    Codewars,
-                      Kyu8
+    other-modules:    Codewars.Functions,
+                      Codewars.Kyu8
 
     -- Modules included in this executable, other than Main.
     -- other-modules:

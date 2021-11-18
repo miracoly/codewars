@@ -1,4 +1,4 @@
-module Codewars where
+module Codewars.Functions where
 
 import Data.List
 

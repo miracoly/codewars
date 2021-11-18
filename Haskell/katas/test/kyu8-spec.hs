@@ -1,6 +1,6 @@
 module Main where
 
-import Kyu8
+import Codewars.Kyu8
 
 import Test.Hspec
 import Test.QuickCheck

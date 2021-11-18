@@ -1,6 +1,6 @@
 module Main where
 
-import Codewars
+import Codewars.Functions
 
 import Test.Hspec
 import Test.QuickCheck
