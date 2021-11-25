@@ -31,6 +31,15 @@ Test-Suite kyu7
                         split,
                         QuickCheck
 
+Test-Suite kyu6
+    type:               exitcode-stdio-1.0
+    hs-source-dirs:     app
+    main-is:            ../test/kyu6-spec.hs
+    other-modules:      Codewars.Kyu6
+    build-depends:      base >= 4 && < 5,
+                        hspec,
+                        QuickCheck
+
 -- A short (one-line) description of the package.
 -- synopsis:
 
@@ -59,6 +68,7 @@ executable codewars
     other-modules:    Codewars.Functions,
                       Codewars.Kyu8
                       Codewars.Kyu7
+                      Codewars.Kyu6
 
     -- Modules included in this executable, other than Main.
     -- other-modules:
