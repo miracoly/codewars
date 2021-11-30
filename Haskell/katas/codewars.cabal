@@ -40,6 +40,24 @@ Test-Suite kyu6
                         hspec,
                         QuickCheck
 
+Test-Suite kyu5
+    type:               exitcode-stdio-1.0
+    hs-source-dirs:     app
+    main-is:            ../test/kyu5-spec.hs
+    other-modules:      Codewars.Kyu5
+    build-depends:      base >= 4 && < 5,
+                        hspec,
+                        QuickCheck
+
+Test-Suite week1
+    type:               exitcode-stdio-1.0
+    hs-source-dirs:     app
+    main-is:            ../test/week1-spec.hs
+    other-modules:      CIS194.Week1
+    build-depends:      base >= 4 && < 5,
+                        hspec,
+                        QuickCheck
+
 -- A short (one-line) description of the package.
 -- synopsis:
 
@@ -69,6 +87,8 @@ executable codewars
                       Codewars.Kyu8
                       Codewars.Kyu7
                       Codewars.Kyu6
+                      Codewars.Kyu5
+                      CIS194.Week1
 
     -- Modules included in this executable, other than Main.
     -- other-modules:
