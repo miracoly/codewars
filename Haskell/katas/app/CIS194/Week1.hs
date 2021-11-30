@@ -2,7 +2,7 @@ module CIS194.Week1 where
 
 import Data.Char
 
-validate :: Int -> Bool
+validate :: Integer -> Bool
 validate n = 0 == mod (sum n) 10
   where sum = sumDigits . doubleEveryOther . toDigits
 
@@ -15,10 +15,10 @@ doubleEveryOther = reverse . double . reverse
     double (x:y:xs) = x:(2*y):(double xs)
     double x = x
 
-toDigitsRev :: Int -> [Int]
+toDigitsRev :: Integer -> [Int]
 toDigitsRev = reverse . toDigits
 
-toDigits :: Int -> [Int]
+toDigits :: Integer -> [Int]
 toDigits n
   | n <= 0 = []
   | otherwise =  map digitToInt (show n)
