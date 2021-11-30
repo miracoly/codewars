@@ -2,6 +2,13 @@ module CIS194.Week1 where
 
 import Data.Char
 
+validate :: Int -> Bool
+validate n = 0 == mod (sum n) 10
+  where sum = sumDigits . doubleEveryOther . toDigits
+
+sumDigits :: [Int] -> Int
+sumDigits = sum . map (sum . map digitToInt . show)
+
 doubleEveryOther :: [Int] -> [Int]
 doubleEveryOther = reverse . double . reverse
   where
