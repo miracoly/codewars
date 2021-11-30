@@ -58,6 +58,16 @@ Test-Suite week1
                         hspec,
                         QuickCheck
 
+Test-Suite log
+    type:               exitcode-stdio-1.0
+    hs-source-dirs:     app
+    main-is:            ../test/log-spec.hs
+    other-modules:      CIS194.Log.LogAnalysis,
+                        CIS194.Log.Log
+    build-depends:      base >= 4 && < 5,
+                        hspec,
+                        QuickCheck
+
 -- A short (one-line) description of the package.
 -- synopsis:
 
@@ -84,11 +94,13 @@ extra-source-files: CHANGELOG.md
 executable codewars
     main-is:          Main.hs
     other-modules:    Codewars.Functions,
-                      Codewars.Kyu8
-                      Codewars.Kyu7
-                      Codewars.Kyu6
-                      Codewars.Kyu5
-                      CIS194.Week1
+                      Codewars.Kyu8,
+                      Codewars.Kyu7,
+                      Codewars.Kyu6,
+                      Codewars.Kyu5,
+                      CIS194.Week1,
+                      CIS194.Log.LogAnalysis,
+                      CIS194.Log.Log
 
     -- Modules included in this executable, other than Main.
     -- other-modules:
