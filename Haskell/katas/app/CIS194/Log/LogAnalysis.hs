@@ -1,6 +1,10 @@
 module CIS194.Log.LogAnalysis where
 
+import Data.String
 import CIS194.Log.Log
+
+parse :: String -> [LogMessage]
+parse s = parseMessage <$> (lines s)
 
 parseMessage :: String -> LogMessage
 parseMessage m = let wl = words m in
